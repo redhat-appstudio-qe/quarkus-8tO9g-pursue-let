@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-ywed
+  namespace: e2e-demos-foyv-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:5cb71ab6092c22ec4c55296e45ad0b2c462e55958f6d8f4670dc28da9e02e647
+        name: my-java-quarkus
+        resources: {}
+status: {}
